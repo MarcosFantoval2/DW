@@ -8,7 +8,7 @@ foreach($usuarios as $email =>$pass){
 }
 if ($esta){
     $_SESSION["email"]=$_POST["email"];
-    header("Location:perfil.html");
+    header("Location:perfil.php");
 }else{
     header("Location:iniciar.html?error=1");
 }
