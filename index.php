@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION["email"])){
-  header("Location:perfil.html");
+  header("Location:perfil.php");
 }
 ?>
 <html>
@@ -62,7 +62,7 @@ if(isset($_SESSION["email"])){
                 <a href="registro.html"><button type="button" class="btn btn-primary" style="margin-right: 50;"style="background-color:blue ">Registrarse</button></a> 
             </div>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="iniciar.html"><button type="button" class="btn btn-primary">Iniciar sesión</button></a>
+                <a href="iniciar.php"><button type="button" class="btn btn-primary">Iniciar sesión</button></a>
             </div>
         
         </div>
