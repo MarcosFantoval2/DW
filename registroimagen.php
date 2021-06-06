@@ -55,7 +55,7 @@
             <h2>Bienvenido <?php echo($_POST[nombre])?>, para continuar es necesario subir una foto a tu perfil.</h2>
             <img src="https://image.flaticon.com/icons/png/512/17/17004.png" width="150" height="150" >
             <br>
-            <form name="subida-imagenes" action= "cregistration.php" method="POST" enctype="multipart/formdata" >
+            <form name="subida-imagenes" >
                 <input type="file" name="fotoperfil"id="fotoperfil" accept="image/png,image/jpg"/>
 
                 <input type="submit" name="subir-imagen" value="Enviar imagen" />
@@ -64,33 +64,28 @@
                 <button type="button" class="btn btn-primary">Terminar</button></a>
             </form>
         </div>
-        <form method="POST" action="finregistroimagen.php">
+        <form action= "cregistration.php" method="POST" enctype="multipart/formdata" >
                 <div class="mb-3">
-                    
                     <input type="hidden"  id="Name"  value= "<?php echo($_POST[nombre])?>">
-                    
                 </div>
                 <div class="mb-3">
                     <input type="hidden"  id="unive"value= "<?php echo($_POST[uni])?>" >
-                    
                 </div>
-                <div class="mb-3">
-                   
+                <div class="mb-3">    
                     <input type="hidden"  id="Date"value= "<?php echo($_POST[fecha])?>">
-                    
                 </div>
                 <div class="mb-3">
-                
                 <input type="hidden"  id="Email1" value= "<?php echo($_POST[email])?>">
-                <!-- Aquí puedes escribir tu comentario <div id="emailHelp" class="form-text"></div> -->
                 </div>
                 <div class="mb-3">
-                
                 <input type="hidden"  id="Password1"value= "<?php echo($_POST[contraseña])?>" >
                 </div>
-              
-                <button type="submit" class="btn btn-primary">Registrarse</button></a>
+                <input type="file" name="fotoperfil"id="fotoperfil" accept="image/png,image/jpg"/>
+                <input type="submit" name="subir-imagen" value="Enviar imagen" />
                 <br>
+                <br>
+                <button type="button" class="btn btn-primary">Terminar</button></a
+                
             </form>
     </body>
 
