@@ -55,15 +55,8 @@
             <h2>Bienvenido <?php echo($_POST[nombre])?>, para continuar es necesario subir una foto a tu perfil.</h2>
             <img src="https://image.flaticon.com/icons/png/512/17/17004.png" width="150" height="150" >
             <br>
-            <form name="subida-imagenes" >
-                <input type="file" name="fotoperfil"id="fotoperfil" accept="image/png,image/jpg"/>
-
-                <input type="submit" name="subir-imagen" value="Enviar imagen" />
-                <br>
-                <br>
-                <button type="button" class="btn btn-primary">Terminar</button></a>
-            </form>
-        </div>
+           
+        
         <form action= "cregistration.php" method="POST" enctype="multipart/formdata" >
                 <div class="mb-3">
                     <input type="hidden"  id="Name"  value= "<?php echo($_POST[nombre])?>">
@@ -84,9 +77,8 @@
                 <input type="submit" name="subir-imagen" value="Enviar imagen" />
                 <br>
                 <br>
-                <button type="button" class="btn btn-primary">Terminar</button></a
-                
-            </form>
+              </form>
+            </div>
     </body>
 
 </html>
