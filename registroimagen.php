@@ -52,7 +52,7 @@
        
         <div class= "container card mb-3 " >
 
-            <h2>Bienvenido Brad, para continuar es necesario subir una foto a tu perfil.</h2>
+            <h2>Bienvenido <?php echo($_POST[nombre])?>, para continuar es necesario subir una foto a tu perfil.</h2>
             <img src="https://image.flaticon.com/icons/png/512/17/17004.png" width="150" height="150" >
             <br>
             <form name="subida-imagenes" action= "cregistration.php" method="POST" enctype="multipart/formdata" >
