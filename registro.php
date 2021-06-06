@@ -61,22 +61,18 @@
                     
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputDate" class="form-label">Fecha de nacimiento</label>
+                    <label for="exampleInputDate" id ="fecha" name ="fecha"class="form-label">Fecha de nacimiento</label>
                     <input type="date" class="form-control" id="exampleInputDate">
                     
                 </div>
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email de acceso</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" name ="email"class="form-control" id="email" aria-describedby="emailHelp">
                 <!-- Aquí puedes escribir tu comentario <div id="emailHelp" class="form-text"></div> -->
                 </div>
                 <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <label for="exampleInputPassword1" name ="contraseña" id="contraseña" class="form-label">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrarse</button></a>
                 <br>

@@ -66,32 +66,28 @@
         <form method="POST" action="finregistroimagen.php">
                 <div class="mb-3">
                     
-                    <input type="hidden" class="form-control" id="exampleInputName"  value= "<?php echo($_POST[nombre])?>">
+                    <input type="hidden"  id="Name"  value= "<?php echo($_POST[nombre])?>">
                     
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName1" class="form-label">Colegio/Universidad</label>
-                    <input type="name" class="form-control" id="exampleInputName1" >
+                    <input type="name"  id="unive"value= "<?php echo($_POST[uni])?>" >
                     
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputDate" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="exampleInputDate">
+                   
+                    <input type="date"  id="Date"value= "<?php echo($_POST[fecha])?>">
                     
                 </div>
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email de acceso</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+                <input type="email"  id="Email1" value= "<?php echo($_POST[email])?>">
                 <!-- Aquí puedes escribir tu comentario <div id="emailHelp" class="form-text"></div> -->
                 </div>
                 <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                
+                <input type="hidden"  id="Password1"value= "<?php echo($_POST[contraseña])?>" >
                 </div>
-                <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-                </div>
+              
                 <button type="submit" class="btn btn-primary">Registrarse</button></a>
                 <br>
             </form>
