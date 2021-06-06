@@ -4,7 +4,7 @@ $target_file = $target_dir.uniqid() .".png";
 $uploadOK=1;
 $check=getimagesize($_FILES["fotoPerfil"]["tmp_name"]);
 
-if ($check!==false){
+if ($check!=false){
     $uploadOK=1;
 }   
 else{

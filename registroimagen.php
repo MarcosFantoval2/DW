@@ -56,7 +56,8 @@
             <img src="https://image.flaticon.com/icons/png/512/17/17004.png" width="150" height="150" >
             <br>
             <form name="subida-imagenes" action= "cregistration.php" method="POST" enctype="multipart/formdata" >
-                <input type="file" name="imagen1" />
+                <input type="file" name="fotoperfil"id="fotoperfil" accept="image/png,image/jpg"/>
+
                 <input type="submit" name="subir-imagen" value="Enviar imagen" />
                 <br>
                 <br>
