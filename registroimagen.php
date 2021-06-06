@@ -70,17 +70,17 @@
                     
                 </div>
                 <div class="mb-3">
-                    <input type="name"  id="unive"value= "<?php echo($_POST[uni])?>" >
+                    <input type="hidden"  id="unive"value= "<?php echo($_POST[uni])?>" >
                     
                 </div>
                 <div class="mb-3">
                    
-                    <input type="date"  id="Date"value= "<?php echo($_POST[fecha])?>">
+                    <input type="hidden"  id="Date"value= "<?php echo($_POST[fecha])?>">
                     
                 </div>
                 <div class="mb-3">
                 
-                <input type="email"  id="Email1" value= "<?php echo($_POST[email])?>">
+                <input type="hidden"  id="Email1" value= "<?php echo($_POST[email])?>">
                 <!-- Aquí puedes escribir tu comentario <div id="emailHelp" class="form-text"></div> -->
                 </div>
                 <div class="mb-3">

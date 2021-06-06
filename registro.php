@@ -57,7 +57,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputName1" class="form-label">Colegio/Universidad</label>
-                    <input type="name" class="form-control" id="exampleInputName1" >
+                    <input type="name" name= "uni"  class="form-control" id="uni" >
                     
                 </div>
                 <div class="mb-3">
