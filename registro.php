@@ -49,10 +49,10 @@
     <body>
         
         <div class= "container bg-dark text-white rounded mx-auto d-block" >
-            <form>
+            <form method="POST" action="registroimagen.php">
                 <div class="mb-3">
                     <label for="exampleInputName" class="form-label">Nombre completo</label>
-                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp">
+                    <input type="name" name ="nombre" class="form-control" id="nombre" aria-describedby="namelHelp">
                     <div id="emailHelp" class="form-text">Como minimo debe de estar el primer nombre y apellido.</div>
                 </div>
                 <div class="mb-3">
@@ -78,7 +78,7 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
                 </div>
-                <a href="registroimagen.html"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                <button type="submit" class="btn btn-primary">Registrarse</button></a>
                 <br>
             </form>
         

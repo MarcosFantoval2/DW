@@ -10,6 +10,6 @@ if ($esta){
     $_SESSION["email"]=$_POST["email"];
     header("Location:perfil.php");
 }else{
-    header("Location:iniciar.html?error=1");
+    header("Location:iniciar.php?error=1");
 }
 ?>
