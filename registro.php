@@ -62,7 +62,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputDate" id ="fecha" name ="fecha"class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="exampleInputDate">
+                    <input type="date" class="form-control" id="fecha" name ="fecha">
                     
                 </div>
                 <div class="mb-3">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="mb-3">
                 <label for="exampleInputPassword1" name ="contraseña" id="contraseña" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" class="form-control" id="contraseña" name ="contraseña">
                 </div>
                 <button type="submit" class="btn btn-primary">Registrarse</button></a>
                 <br>
