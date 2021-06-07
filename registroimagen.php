@@ -59,13 +59,13 @@
         
         <form action= "cregistration.php" method="POST" enctype="multipart/form-data" >
                 <div class="mb-3">
-                    <input type="hidden"  id="Name"  value= "<?php echo($_POST["nombre"])?>">
+                    <input type="hidden"  id="Name" name="Name" value= "<?php echo($_POST["nombre"])?>">
                 </div>
                 <div class="mb-3">
-                    <input type="hidden"  id="unive"value= "<?php echo($_POST["uni"])?>" >
+                    <input type="hidden"  id="unive" name= "unive" value= "<?php echo($_POST["uni"])?>" >
                 </div>
                 <div class="mb-3">    
-                    <input type="hidden"  id="Date"value= "<?php echo($_POST["fecha"])?>">
+                    <input type="hidden"  id="Date" name="Date" value= "<?php echo($_POST["fecha"])?>">
                 </div>
                 <div class="mb-3">
                 <input type="hidden"  id="Email1" value= "<?php echo($_POST["email"])?>">
