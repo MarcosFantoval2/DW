@@ -54,8 +54,6 @@
                     <label for="exampleInputName" class="form-label">Nombre de usuario</label>
                     <input name="email" type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp">
                 </div>
-                
-               
                 <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input name="password" type="password" class="form-control" id="exampleInputPassword1">

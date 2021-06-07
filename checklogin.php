@@ -20,7 +20,7 @@ require 'vendor/autoload.php';
 session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
 $collection = $client->redclouds->usuarios;
-$user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["contrasena"]]);
+$user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
 $esta=false; 
 if(isset($user->email) ){
     $esta=true;
