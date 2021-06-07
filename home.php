@@ -67,7 +67,7 @@
 </div>
 <div id="" class="container-md border border-primary mt-3">
     <div class="row">
-        <div class="col"> 
+        <div class="col-sm"> 
             <br>
             <img src="imagen.png" height="150px">
             <br>
