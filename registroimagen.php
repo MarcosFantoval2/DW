@@ -57,7 +57,7 @@
             <br>
            
         
-        <form action= "cregistration.php" method="POST" enctype="multipart/formdata" >
+        <form action= "cregistration.php" method="POST" enctype="multipart/form-data" >
                 <div class="mb-3">
                     <input type="hidden"  id="Name"  value= "<?php echo($_POST["nombre"])?>">
                 </div>
