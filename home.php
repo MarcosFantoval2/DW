@@ -10,6 +10,6 @@
     <ul>
         <li>uno</li>
         <li>dos</li>
-        <li>tres<br><a href=registro.html>responder</a> </li>
+        <li>tres<br><a href=registro.php>responder</a> </li>
     </ul>
 </html>

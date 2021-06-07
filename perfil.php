@@ -15,17 +15,17 @@ session_start();
                 <a class="navbar-brand" href="#">
                     <img src="https://lh3.googleusercontent.com/proxy/5UnwbzS6Kr99CKC-Z5qVUNluDJhZZh5cMx6A2k16X_kae6733Laa1cguEvtsk9ci2LRuQnZ3GkQyfL9stfL6a-lkcCN-HMRvP_jpWAJedeYOMgw" alt="" width="30" height="24">
                   </a>
-                    <a class="navbar-brand" href="index.html">RedClouds</a>
+                    <a class="navbar-brand" href="index.php">RedClouds</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-right: 57%">
                                 <li class="nav-item">
-                                    <a class="nav-link active"  aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active"  aria-current="page" href="home.php">Home</a>
                                 </li>
                                 <li class="nav-item" >
-                                    <a class="nav-link"  href="perfil.html">Perfil</a>
+                                    <a class="nav-link"  href="perfil.php">Perfil</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
