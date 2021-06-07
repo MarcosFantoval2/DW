@@ -75,13 +75,13 @@ session_start();
             <br>
             <div class= "container " >
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label"><?php echo($_POST["nombre"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label"><?php echo($_POST["Name"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label"><?php echo($_POST["fecha"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label"><?php echo($_POST["Date"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label"><?php echo($_POST["uni"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label"><?php echo($_POST["unive"] ) ?>  </label>
                 </div>
           
 
