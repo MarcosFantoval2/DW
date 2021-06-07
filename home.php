@@ -65,15 +65,16 @@
         </form></div>
     </div>
 </div>
-<div id="" class="container-md border border-primary mt-3">
+<div id="" class="container-md border border-primary mt-3" style="padding: 10;">
     <div class="row">
+        
         <div class="col-sm-auto"> 
-            <br>
+            
             <img src="imagen.png" height="150px">
-            <br>
+            
         </div>
         <div class="col">
-            <div class="row left">
+            <div class="row">
                 <br>
                 <p class="text-muted"> quien escribio la fecha y hora</p>
                 <br>
