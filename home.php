@@ -91,7 +91,8 @@
     </div>
     <div class="row">
         <br>
-        <input class="form-control" type="text" name="texto" id="texto" placeholder="Escribe un comentario">
+        <label for="exampleInputPassword1" class="form-label">Escribe un comentario</label>
+        <input class="form-control" type="text" name="texto" id="texto2" placeholder="Comentario">
         <br>
     </div>
     <div class="col-sm">
