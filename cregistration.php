@@ -75,15 +75,29 @@ session_start();
             <br>
             <div class= "container " >
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label"><?php echo($_POST["Name"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label"> Nombre: <?php echo($_POST["Name"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label"><?php echo($_POST["Date"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label"> Fecha de nacimiento: <?php echo($_POST["Date"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label"><?php echo($_POST["unive"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label">Universidad: <?php echo($_POST["unive"] ) ?>  </label>
                 </div>
-          
+
+<?php
+require 'vendor/autoload.php';
+session_start();
+$client = new MongoDB\Client("mongodb://localhost:27017");
+$collection = $client->redclouds->usuarios;
+$insertOneResult=$collection->insertOne([
+    "email"=>$_POST["email"],
+    "nombre"=>$_POST["nombre"],
+    "password"=>$_POST["password"],
+    "universidad"=>$_POST["universidad"],
+    "fecha"=>$_POST["fecha"],
+    "img"=>$target_file,])
+
+?>
 
     </body>
 </html>
