@@ -7,7 +7,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="https://lh3.googleusercontent.com/proxy/5UnwbzS6Kr99CKC-Z5qVUNluDJhZZh5cMx6A2k16X_kae6733Laa1cguEvtsk9ci2LRuQnZ3GkQyfL9stfL6a-lkcCN-HMRvP_jpWAJedeYOMgw" alt="" width="30" height="24">
                   </a>
-              <a class="navbar-brand" href="index.html">RedClouds</a>
+              <a class="navbar-brand" href="index.php">RedClouds</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -52,11 +52,11 @@
             <form action="checklogin.php" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputName" class="form-label">Nombre de usuario</label>
-                    <input name="email" type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp">
+                    <input name="email" type="name" class="form-control" id="email" aria-describedby="namelHelp">
                 </div>
                 <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                <input name="password" type="password" class="form-control" id="password">
                 </div>
                 <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
