@@ -74,7 +74,9 @@
         </div>
         <div class="col">
             <div class="row left">
+                <br>
                 <p class="text-muted"> quien escribio la fecha y hora</p>
+                <br>
             </div>
             <div class="row">
                 <p class="font-weight-bold">el post en si</p>
