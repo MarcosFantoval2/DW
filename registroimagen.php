@@ -71,7 +71,7 @@
                 <input type="hidden"  id="Email1" name ="email"value= "<?php echo($_POST["email"])?>">
                 </div>
                 <div class="mb-3">
-                <input type="hidden"  id="Password1"name ="contraseña"value= "<?php echo($_POST["contraseña"])?>" >
+                <input type="hidden"  id="Password1"name ="contrasena"value= "<?php echo($_POST["contraseña"])?>" >
                 </div>
                 <input type="file" name="fotoperfil" id="fotoperfil" accept="image/png, image/jpg"/>
                 <input type="submit" name="subir-imagen" value="Enviar imagen" />

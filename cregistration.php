@@ -92,8 +92,8 @@ $collection = $client->redclouds->usuarios;
 $insertOneResult=$collection->insertOne([
     "email"=>$_POST["email"],
     "nombre"=>$_POST["nombre"],
-    "password"=>$_POST["password"],
-    "universidad"=>$_POST["universidad"],
+    "password"=>$_POST["contrasena"],
+    "universidad"=>$_POST["uni"],
     "fecha"=>$_POST["fecha"],
     "img"=>$target_file,])
 
