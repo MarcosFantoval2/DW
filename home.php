@@ -65,6 +65,33 @@
         </form></div>
     </div>
 </div>
+<div id="#" name ="publicacion" class="container-md border border-primary mt-3">
+    <div class="row">
+        <div class="col"> 
+            <br>
+            <img src="imagen.png" height="150px">
+            <br>
+        </div>
+        <div class="col">
+            <div class="row">
+                <p class="text-muted"> quien escribio la fecha y hora</p>
+            </div>
+            <div class="row">
+                <p class="font-weight-bold">el post en si</p>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-sm">
+            <br>
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Me gusta</a>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <br>
+        <input class="form-control" type="text" placeholder="Ingresa un comentario y presiona enviar para publicar">
+    </div>
+</div>
     </body>
   
 </html>

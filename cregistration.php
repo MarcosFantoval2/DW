@@ -81,7 +81,7 @@ session_start();
                     <label for="exampleInputName" class="form-label"> Fecha de nacimiento: <?php echo($_POST["fecha"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Universidad: <?php echo($_POST["uni"] ) ?>  </label>
+                    <label for="exampleInputName" class="form-label"> Universidad: <?php echo($_POST["uni"] ) ?>  </label>
                 </div>
 
 <?php
