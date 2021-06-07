@@ -52,7 +52,7 @@
        
         <div class= "container card mb-3 " >
 
-            <h2>Bienvenido <?php echo($_POST[nombre])?>, para continuar es necesario subir una foto a tu perfil.</h2>
+            <h2>Bienvenido <?php echo($_POST["nombre"])?>, para continuar es necesario subir una foto a tu perfil.</h2>
             <img src="https://image.flaticon.com/icons/png/512/17/17004.png" width="150" height="150" >
             <br>
            
@@ -73,7 +73,7 @@
                 <div class="mb-3">
                 <input type="hidden"  id="Password1"value= "<?php echo($_POST["contraseña"])?>" >
                 </div>
-                <input type="file" name="fotoperfil"id="fotoperfil" accept="image/png,image/jpg"/>
+                <input type="file" name="fotoperfil" id="fotoperfil" accept="image/png, image/jpg"/>
                 <input type="submit" name="subir-imagen" value="Enviar imagen" />
                 <br>
                 <br>
