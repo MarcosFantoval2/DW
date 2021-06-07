@@ -65,7 +65,7 @@
         </form></div>
     </div>
 </div>
-<div id="#" name ="publicacion" class="container-md border border-primary mt-3">
+<div id="" class="container-md border border-primary mt-3">
     <div class="row">
         <div class="col"> 
             <br>
@@ -73,7 +73,7 @@
             <br>
         </div>
         <div class="col">
-            <div class="row">
+            <div class="row left">
                 <p class="text-muted"> quien escribio la fecha y hora</p>
             </div>
             <div class="row">
@@ -89,9 +89,14 @@
     </div>
     <div class="row">
         <br>
-        <input class="form-control" type="text" placeholder="Ingresa un comentario y presiona enviar para publicar">
+        <input class="form-control" type="text" name="texto" id="texto" placeholder="Escribe un comentario">
+        <br>
+    </div>
+    <div class="col-sm">
+        <button type="submit" class="btn btn-primary">Publicar</button>
     </div>
 </div>
+
     </body>
   
 </html>
