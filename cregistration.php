@@ -1,5 +1,5 @@
 <?php 
-$target_dir = "images";
+$target_dir = "/imagenes/";
 $target_file = $target_dir.uniqid() .".png";
 $uploadOK=1;
 $check=getimagesize($_FILES["fotoperfil"]["tmp_name"]);
