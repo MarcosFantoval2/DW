@@ -4,7 +4,7 @@ session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
 $collection = $client->redclouds->posts;
 $posts = $collection->find([],['sort'=>['fechahora' => -1]]);
-
+$user = $usuarios->find([]);
 ?>
 <html>
     <head>
@@ -81,12 +81,12 @@ foreach($posts as $post){
 <div id="" class="container-md border border-primary mt-3" style="padding: 10;">
     <div class="row">
         <div class="col-sm-auto"> 
-            <img src="<?php echo($usuarios->img)?>" height="150px">
+            <img src="<?php echo($usuarios->findOne(["nombre"=>$post->username]))?>" height="150px">
         </div>
         <div class="col">
             <div class="row">
                 <br>
-                <p class="text-muted"><?php echo(date("m/d/Y h:m:s",$posts->fechahora)); ?></p>
+                <p class="text-muted"><?php echo(date("m/d/Y h:m:s",$post->fechahora)); ?></p>
                 <br>
             </div>
             <div class="row">
