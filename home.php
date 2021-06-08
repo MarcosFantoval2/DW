@@ -62,7 +62,7 @@ $posts = $collection->find(["email"=>$_POST["email"], "password"=>$_POST["passwo
 <div class="container-md border border-primary mt-3">
     <div class="row">
         <div class="col">
-            <form action="posteao.php" method="POST">
+            <form action="posteo.php" method="POST">
                 <br>
                 <label for="exampleInputPassword1" class="form-label">¿Que esta pensando?</label>
             <input class="form-control" type="text" name="texto" id="texto" placeholder="Escribe tu publicación">
