@@ -87,7 +87,7 @@ foreach($posts as $post){
         <div class="col">
             <div class="row">
                 <br>
-                <p class="text-muted"><?php echo(date("m/d/Y h:m:s",$post->fechahora)); ?></p>
+                <p><?php echo($user->nombre) ?> Publico a las </p><p class="text-muted"><?php echo(date("m/d/Y h:m:s",$post->fechahora)); ?></p>
                 <br>
             </div>
             <div class="row">
