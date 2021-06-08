@@ -56,16 +56,15 @@ session_start();
             </div>
             <br>
             <div class= "container " >
-                <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Brad Pitt</label>
+            <div class="mb-3">
+                    <label for="exampleInputName" class="form-label"> Nombre: <?php echo($_POST["nombre"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">18/12/1963</label>
+                    <label for="exampleInputName" class="form-label"> Fecha de nacimiento: <?php echo($_POST["fecha"] ) ?>  </label>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Harvard (Astro-Fisíca de Particulas)</label>
+                    <label for="exampleInputName" class="form-label"> Universidad: <?php echo($_POST["uni"] ) ?>  </label>
                 </div>
-          
 
     </body>
 </html>

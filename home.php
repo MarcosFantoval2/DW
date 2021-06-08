@@ -87,14 +87,14 @@ foreach($posts as $post){
         <div class="col">
             <div class="row">
                 <br>
-                <p><?php echo($user->nombre) ?> Publico a las </p><p class="text-muted"><?php echo(date("m/d/Y h:m:s",$post->fechahora)); ?></p>
+                <p><?php echo($user->nombre) ?> publico a las  </p><p class="text-muted"><?php echo(date(" m/d/Y h:m:s",$post->fechahora)); ?></p>
                 <br>
             </div>
             <div class="row">
                 <p class="font-weight-bold"><?php echo($post->texto)?></p>
             </div>
             <div class="row">
-                <p class="font-weight-bold">Me gustas 0</p>
+                <p class="font-weight-bold">Me gustas <?php echo($post->likes)?></p>
             </div>
         </div>
         <div class="row">
