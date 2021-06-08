@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
 $collection = $client->redclouds->posts;
-$posts = $collection->find(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
+$posts = $collection->find([],['sort'=>['fechahora' => -1]]);
 
 ?>
 <html>
@@ -86,11 +86,14 @@ foreach($posts as $post){
         <div class="col">
             <div class="row">
                 <br>
-                <p class="text-muted"> quien escribio la fecha y hora</p>
+                <p class="text-muted"><?php echo(date("m/d/Y h:m:s",$posts->fechahora)); ?></p>
                 <br>
             </div>
             <div class="row">
                 <p class="font-weight-bold"><?php echo($post->texto)?></p>
+            </div>
+            <div class="row">
+                <p class="font-weight-bold">Me gustas 0</p>
             </div>
         </div>
         <div class="row">
