@@ -1,3 +1,11 @@
+<?php
+require 'vendor/autoload.php';
+session_start();
+$client = new MongoDB\Client("mongodb://localhost:27017");
+$collection = $client->redclouds->posts;
+$posts = $collection->find(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
+
+?>
 <html>
     <head>
         
@@ -65,13 +73,15 @@
         </form></div>
     </div>
 </div>
+<?php
+foreach($posts as $post){
+
+    ?>
+
 <div id="" class="container-md border border-primary mt-3" style="padding: 10;">
     <div class="row">
-        
         <div class="col-sm-auto"> 
-            
             <img src="imagen.png" height="150px">
-            
         </div>
         <div class="col">
             <div class="row">
@@ -80,7 +90,7 @@
                 <br>
             </div>
             <div class="row">
-                <p class="font-weight-bold">el post en si</p>
+                <p class="font-weight-bold"><?php echo($_POST["texto"])?></p>
             </div>
         </div>
         <div class="row">
@@ -93,14 +103,14 @@
     <div class="row">
         <br>
         <label for="exampleInputPassword1" class="form-label">Escribe un comentario</label>
-        <input class="form-control" type="text" name="texto" id="texto2" placeholder="Comentario">
+        <input class="form-control" type="text" name="texto2" id="texto2" placeholder="Comentario">
         <br>
     </div>
     <div class="col-sm">
         <button type="submit" class="btn btn-primary">Publicar</button>
     </div>
 </div>
-
+<?php } ?>
     </body>
   
 </html>
