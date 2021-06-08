@@ -90,7 +90,7 @@ foreach($posts as $post){
                 <br>
             </div>
             <div class="row">
-                <p class="font-weight-bold"><?php echo($_POST["texto"])?></p>
+                <p class="font-weight-bold"><?php echo($post["texto"])?></p>
             </div>
         </div>
         <div class="row">
