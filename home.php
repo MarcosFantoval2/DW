@@ -76,7 +76,7 @@ $posts = $collection->find([],['sort'=>['fechahora' => -1]]);
 </div>
 <?php
 foreach($posts as $post){
-    $user = $users->find(["_id"=> new MongoDB\BSON\ObjectId($post->userid),]);
+    $user = $users->findOne(["_id"=> new MongoDB\BSON\ObjectId($post->userid),]);
     ?>
 
 <div id="" class="container-md border border-primary mt-3" style="padding: 10;">
