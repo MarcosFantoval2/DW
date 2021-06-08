@@ -76,13 +76,13 @@ $posts = $collection->find([],['sort'=>['fechahora' => -1]]);
 </div>
 <?php
 foreach($posts as $post){
-    $user = $users->find(["_id"=> new MongoDB\BSON\ObjectId($posteo->userid),]);
+    $user = $users->find(["_id"=> new MongoDB\BSON\ObjectId($posts->userid),]);
     ?>
 
 <div id="" class="container-md border border-primary mt-3" style="padding: 10;">
     <div class="row">
         <div class="col-sm-auto"> 
-            <img src="<?php echo($user->img); ?>" height="150px">
+            <img src="<?php echo($user->img) ?>" height="150px">
         </div>
         <div class="col">
             <div class="row">
