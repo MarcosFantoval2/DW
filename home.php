@@ -81,7 +81,7 @@ foreach($posts as $post){
 <div id="" class="container-md border border-primary mt-3" style="padding: 10;">
     <div class="row">
         <div class="col-sm-auto"> 
-            <img src="imagen.png" height="150px">
+            <img src="<?php echo($usuario->imagen)?>" height="150px">
         </div>
         <div class="col">
             <div class="row">
