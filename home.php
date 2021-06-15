@@ -106,7 +106,7 @@ foreach($posts as $post){
         </div>
         </div>
     </div>
-    <div class="row" style="margin-right: 0; margin-left 0;">
+    <div class="row" style="margin-right: 0; margin-left: 0;">
         <br>
         <label for="exampleInputPassword1" class="form-label">Escribe un comentario</label>
         <input class="form-control" type="text" name="texto2" id="texto2" placeholder="Comentario">
