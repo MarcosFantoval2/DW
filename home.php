@@ -94,19 +94,19 @@ foreach($posts as $post){
                 <p class="font-weight-bold"><?php echo($post->texto)?></p>
             </div>
 
-            <div class="row">
+            <div class="row" >
                 <p class="font-weight-bold">Me gustas <?php echo($post->likes)?></p>
             </div>
         </div>
         <div></div>
-        <div class="row">
+        <div class="row" style="margin-right: 0;">
         <div class="col-sm">
             <br>
             <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Me gusta</a>
         </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" style="margin-right: 0; margin-left 0;">
         <br>
         <label for="exampleInputPassword1" class="form-label">Escribe un comentario</label>
         <input class="form-control" type="text" name="texto2" id="texto2" placeholder="Comentario">
