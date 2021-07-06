@@ -63,9 +63,26 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Iniciar sesión</button></a>
+               <!-- <button type="submit" class="btn btn-primary">Iniciar sesión</button></a>-->
                 <br>
             </form>
-        
+            <a href="#" onclick="login()" class="btn btn-primary btn-block">Iniciar sesión</a>
         </div>
     </body>
+    <script>
+    function login(){
+        $.ajax({
+            url: "/apirest.php/login",
+            dataType:"json",
+            type:"POST",
+            data:{"email": $("#email").val(), "password": $("#password").val()},
+            context: document.body
+            }).done(function(data){
+                if(data.status){
+                    location.href="/home.php";
+                }else{
+                    $("#error").html("Usuario o contraseña incorrectos")
+                }
+            });
+    }
+    </script>
