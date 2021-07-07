@@ -27,7 +27,7 @@ case "iniciar":
 
         ));
     }else{
-        echo json_encode(Array("status"=>$user));
+        echo json_encode(Array("status"=>$user,"bd"=>$collection));
     }
     break;
 case "logout":
