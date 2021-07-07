@@ -5,13 +5,14 @@ $ruta=$_SERVER["REQUEST_URI"];
 $ruta= explode("apirest.php/",$ruta)[1];
 $ruta= explode("/",$ruta);
 require "vendor/autoload.php";
-session_start();
+#<!-- session_start(); -->
 $client = new MongoDB\Client("mongodb://localhost:27017");
-header("Content-Type:application/json"); 
+#header("Content-Type:application/json"); 
 switch($ruta[0]){
 
 case "iniciar":
     $collection = $client->redclouds->usuarios;
+    echo json_encode(Array("status"=>$user,"bd"=>$collection));
     $user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
 
     $esta=false; 
