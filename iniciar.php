@@ -72,7 +72,7 @@
     <script>
     function login(){
         $.ajax({
-            url: "/apirest.php/iniciar",
+            url: "/apiv1.php/iniciar",
             dataType:"json",
             type:"POST",
             data:{"email": $("#email").val(), "password": $("#password").val()},
