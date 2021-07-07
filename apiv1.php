@@ -15,7 +15,7 @@ case "iniciar":
     $collection = $client->redclouds->usuarios;
     echo json_encode(Array("status"=>$user,"bd"=>$collection));
     $user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
-
+    echo json_encode(Array("status"=>$user,"bd"=>$collection));
     $esta=false; 
     if(isset($user->email)){
         $esta=true;
