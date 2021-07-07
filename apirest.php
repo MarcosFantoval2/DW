@@ -27,7 +27,7 @@ case "iniciar":
 
         ));
     }else{
-        echo json_encode(Array("status"=>$_POST["password"]));
+        echo json_encode(Array("status"=>$_POST["email"]));
     }
     break;
 case "logout":
