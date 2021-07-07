@@ -10,7 +10,7 @@ $client = new MongoDB\Client("mongodb://localhost:27017");
 header("Content-Type:application/json"); 
 switch($ruta[0]){
 
-case "Iniciar sesión":
+case "iniciar":
     $collection = $client->redclouds->usuarios;
     $user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
 
