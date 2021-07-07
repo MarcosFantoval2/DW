@@ -27,7 +27,7 @@ case "iniciar":
 
         ));
     }else{
-        echo json_encode(Array("status"=>$esta));
+        echo json_encode(Array("status"=>"password"));
     }
     break;
 case "logout":
