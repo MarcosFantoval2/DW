@@ -25,10 +25,12 @@ $esta=false;
 if(isset($user->email) ){
     $esta=true;
     $_SESSION["user"]=$user;
+
 }
 if ($esta){
-    header("Location:home.php");
+    print_r($user);
+  #  header("Location:home.php");
 }else{
-    header("Location:iniciar.php?error=1");
+ #   header("Location:iniciar.php?error=1");
 }
 ?>
