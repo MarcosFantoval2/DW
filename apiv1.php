@@ -7,7 +7,7 @@ $ruta= explode("/",$ruta);
 require "vendor/autoload.php";
 session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
-print_r($client);
+
 header("Content-Type:application/json"); 
 switch($ruta[0]){
 
@@ -21,14 +21,17 @@ case "iniciar":
         $esta=true;
         $_SESSION["user"]=json_decode(MongoDB\BSON\toJSON(MongoDB\BSON\fromPHP($user)));
         $_SESSION["userid"]=(string)$user["_id"]; 
+        echo("hola");
     }
     if ($esta){
+        echo("hola2");
         echo json_encode(Array(
             "status"=>$esta,
             "userdata"=>$user
-
+            
         ));
     }else{
+        echo("hola3");
         echo json_encode(Array("status"=>$user,"bd"=>$collection));
     }
     break;
