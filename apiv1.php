@@ -1,43 +1,34 @@
 <?php
 
 session_start();
-print_r($_POST);
-/*
 $ruta=$_SERVER["REQUEST_URI"];
 $ruta= explode("apiv1.php/",$ruta)[1];
 $ruta= explode("/",$ruta);
 require "vendor/autoload.php";
 session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
-
 header("Content-Type:application/json"); 
-
 switch($ruta[0]){
 
 case "iniciar":
     $collection = $client->redclouds->usuarios;
+    echo json_encode(Array("status"=>$user,"bd"=>$collection));
     $user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
-    print_r($_POST);
-    #foreach($user as $entry){
-     #   print_r($entry);}
+
     $esta=false; 
     if(isset($user->email)){
         $esta=true;
-       # $_SESSION["user"]=json_decode(MongoDB\BSON\toJSON(MongoDB\BSON\fromPHP($user)));
-        $_SESSION["user"]=$user;
+        $_SESSION["user"]=json_decode(MongoDB\BSON\toJSON(MongoDB\BSON\fromPHP($user)));
         $_SESSION["userid"]=(string)$user["_id"]; 
-        echo("hola");
     }
     if ($esta){
-        echo("hola2");
         echo json_encode(Array(
             "status"=>$esta,
             "userdata"=>$user
-            
+
         ));
     }else{
-        echo("hola3");
-        echo json_encode(Array("status"=>$user,"bd"=>$collection));
+        echo json_encode(Array("status"=>$esta));
     }
     break;
 case "logout":
