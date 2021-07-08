@@ -14,11 +14,13 @@ switch($ruta[0]){
 case "iniciar":
     $collection = $client->redclouds->usuarios;
     $user = $collection->find();
-    print_r($user);
+    foreach($user as $entry){
+        print_r($entry);}
     $esta=false; 
     if(isset($user->email)){
         $esta=true;
-        $_SESSION["user"]=json_decode(MongoDB\BSON\toJSON(MongoDB\BSON\fromPHP($user)));
+       # $_SESSION["user"]=json_decode(MongoDB\BSON\toJSON(MongoDB\BSON\fromPHP($user)));
+        $_SESSION["user"]=$user;
         $_SESSION["userid"]=(string)$user["_id"]; 
         echo("hola");
     }
