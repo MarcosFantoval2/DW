@@ -14,10 +14,9 @@ switch($ruta[0]){
 case "iniciar":
     $collection = $client->redclouds->usuarios;
     $user = $collection->findOne(["email"=>$_POST["email"], "password"=>$_POST["password"]]);
-    echo $_POST["email"];
-    echo $_POST["password"];
-    foreach($user as $entry){
-        print_r($entry);}
+    print_r($_POST);
+    #foreach($user as $entry){
+     #   print_r($entry);}
     $esta=false; 
     if(isset($user->email)){
         $esta=true;
