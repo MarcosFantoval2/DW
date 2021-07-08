@@ -63,10 +63,10 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
                 </div>
-               <!-- <button type="submit" class="btn btn-primary">Iniciar sesión</button></a>-->
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button></a>
                 <br>
             </form>
-            <a href="#" onclick="login()" class="btn btn-primary btn-block">Iniciar sesión</a>
+            <!--<a href="#" onclick="login()" class="btn btn-primary btn-block">Iniciar sesión</a>-->
         </div>
     </body>
     <script>
