@@ -8,6 +8,7 @@ require "vendor/autoload.php";
 session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
 echo json_encode(Array("status"=>$client));
+print_r($client);
 header("Content-Type:application/json"); 
 switch($ruta[0]){
 
