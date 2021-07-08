@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+print_r($_POST);
+/*
 $ruta=$_SERVER["REQUEST_URI"];
 $ruta= explode("apiv1.php/",$ruta)[1];
 $ruta= explode("/",$ruta);
@@ -9,6 +11,7 @@ session_start();
 $client = new MongoDB\Client("mongodb://localhost:27017");
 
 header("Content-Type:application/json"); 
+
 switch($ruta[0]){
 
 case "iniciar":
